@@ -1,0 +1,50 @@
+{
+  "name": "RimuBlog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postbuild": "node ./scripts/read-send-to-algolia.js",
+    "lint": "eslint . --fix",
+    "sasg": "sass --watch styles/sass/global.scss styles/global.css",
+    "sasu": "sass --watch styles/sass/utils.module.scss styles/utils.module.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RimuhRimu/nextjs-blog.git"
+  },
+  "author": "RimuCode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RimuhRimu/nextjs-blog.git/issues"
+  },
+  "homepage": "https://nextjs-blog-gpadmn21x-rimucode.vercel.app/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "cors": "^2.8.5",
+    "date-fns": "2.23.0",
+    "gray-matter": "4.0.3",
+    "next": "^11.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-instantsearch-dom": "^6.12.1",
+    "remark": "13.0.0",
+    "remark-html": "13.0.2",
+    "sass": "^1.41.1",
+    "string-strip-html": "^9.0.2"
+  },
+  "devDependencies": {
+    "algoliasearch": "^4.10.5",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.28.0",
+    "json-server": "^0.16.3",
+    "rss-parser": "3.12.0",
+    "standard": "^16.0.3",
+    "xml2json": "^0.12.0"
+  }
+}
